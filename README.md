@@ -5,8 +5,8 @@
 ## Contents
 
 1. [Short description](#short-description)
-1. [Demo video](#demo-video)
 1. [Presentation](#presentation)
+1. [Demo video](#demo-video)
 1. [The architecture](#the-architecture)
 1. [Long description](#long-description)
 1. [Project roadmap](#project-roadmap)
