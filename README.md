@@ -48,9 +48,13 @@ To overcome the above challenges and extend a lending hand we have come up with 
 -	It will make access to help and resources if a similar situation must happen in the future.
 -	Capture the good deeds done by users on the platform as Karma points and can be used as a measure of their social behaviour.
 
+## Presentation
+
+[Karma Presentation](docs/Karma_Presentation.pdf)
+
 ## Demo video
 
-[![Watch the video]](https://youtu.be/dRQF91RqXNM)
+![Watch the video](https://youtu.be/dRQF91RqXNM)
 
 ## The architecture
 
@@ -155,7 +159,7 @@ The app is build using the IBM credits available for participating in the CFC, w
 
 ## Live demo
 
-You can find a running system to test at [callforcode.mybluemix.net](http://callforcode.mybluemix.net/)
+You can find the working apk file for the app [here](docs/karma-v1-release.apk)
 
 ## Built with
 
@@ -177,4 +181,4 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 * **Jasmine Elamblakatt** - App - [jasmineelamblakatt](https://github.com/jasmineelamblakatt)
 * **Sanket Redekar** - Backend APIs - [wanderingcoderr](https://github.com/wanderingcoderr)
 * **Dylan Dsouza** - App & Backend APIs - [dsouzadyn](https://github.com/dsouzadyn)
-* **Yash Hemmady** - UI/UX
+* **Yash Hemmady** - UI/UX - [hemmadyyash](https://www.behance.net/hemmadyyash)
