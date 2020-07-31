@@ -145,6 +145,7 @@ The app is build using the IBM credits available for participating in the CFC, w
 ## Future technology Road Map: 
 - IBM Natural Language processing (for sentiment analysis of the help created and rating the urgency and criticality of the help)
 - IBM Watson for enabling chatbot to answer frequently asked questions about a current situation and get contact information of government agencies and NGO's
+- Link or redeem Karma point on other ecommerce portals or on any of the services like airline booking, online purchases, taxi rides etc way, this will motivate user to do work for society. Karma points can also be used to measure or rate the social behaviour of a customer applying for a Home loan, a student applying for a university program and organisation pitching for funding for an idea. 
 
 ## Getting started
 
