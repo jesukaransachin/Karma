@@ -35,8 +35,6 @@ Some challenges we are facing now
 •	Job losses and deteriorating financial conditions.
 •	Mass migration 
 
-
-
 ### The idea
 
 To overcome the above challenges and extend a lending hand or take actions we have come up with a unique solution to help and connect people during this pandemic and can be used any other similar situations. 
@@ -52,8 +50,6 @@ Solving shortage of essentials resources to the common man:
 -	It will make access to help and resources if a similar situation must happen in the future.
 -	Capture the good deeds done by users on the platform as Karma points and can be used as a measure of their social behaviour.
 
- 
-
 ## Demo video
 
 [![Watch the video](https://github.com/Code-and-Response/Liquid-Prep/blob/master/images/IBM-interview-video-image.png)](https://youtu.be/vOgCOoy_Bx0)
@@ -66,7 +62,6 @@ Solving shortage of essentials resources to the common man:
 
 ‘Karma’ is a platform for the users to give and to take, it’s an application for connecting people to request help and to give help.
 As we move through these tested times, accessing personal help through applications  has undergone a significant change, we decided to reinvent some of the ways by which, on minimal clicks our app can bring value to both the person asking for help and also to people who are giving help
- 
  
 This app can serve as a valid unique solution for faster sourcing of finding help as well as connecting communities nearby in turn helping out each other, especially in the new reality of pandemic restrictions. It gives users an easy way to create their help that is needed and connect with people nearby willing to help. With rich features like Karma points, it also encourages people to give help to whomever they can.
 Help can be requested on behalf of others if someone does not have a smartphone.
@@ -89,21 +84,16 @@ User just need to enter the phone number and a 4 digit pin received on his sms .
 ## Profile Page:
 User can enter his information on the Profile page.
 Users can complete their profile by entering informations  like Name, Address(To get location), Age(to understand whether the person is senior citizen), Email, Profile Image and any Government certified ID. Only name is mandatory.
-
 On Skipping the profile page, user current latitude and longitude  will be considered as his location and phone number will be considered as point of contact. 
 Users on completing their profile and on a successful KYC would be marked as verified on the app.
 
-
 ## Map page:
-   Map page is the landing page of the app. It shows Red pins(Need Help) and Green pins(Give Help) near you.
+Map page is the landing page of the app. It shows Red pins(Need Help) and Green pins(Give Help) near you.
 Red pin is the help requested by people near you.
 Green pin are the people who wants to help others with some resources.
-
 Map page contains categories at the top. Categories are the current high demand items which people are looking for. These are dynamic and will change based on the prevailing situation, as we are going through Covid-19 pandemic current high demand requirements are Sanitizers, Masks, Medicines, Food etc. 
 If seeker is looking something other than the listed category he can use ‘Others’ option.
-
 Map page can be filtered by categories or user can search any location or resources in the search box.
-
 
 ## Need Help:
 If someone is looking for help, he/she can use the Karma icon in the Map screen.
@@ -112,27 +102,23 @@ To request help the user has to select the respective category, add title and de
 Note: The categories shown are dynamic it will depend on the current situation or condition the highly demanded item are shown in list user can add specific category in ‘Others’ option.
 Once the request is posted it will appear as red pin the Map screen.
 
-
 ## Extend Help from Map page:
-      People using the app can see the red pin near to their location and if they want to extend help, they can click the ‘Ready to Help’ button. On clicking the button, a notification is sent to the seeker, the seeker can then accept it and get the phone number and contact the person to complete his need. Here the motive to connect the help seeker with the change maker is achieved.
+People using the app can see the red pin near to their location and if they want to extend help, they can click the ‘Ready to Help’ button. On clicking the button, a notification is sent to the seeker, the seeker can then accept it and get the phone number and contact the person to complete his need. Here the motive to connect the help seeker with the change maker is achieved.
 
 ## Give Help:
-     If any user has extra resources and wishes to share it with other people, then he can create a “Give help” (Green Pin) card by clicking the karma icon and adding the details and on saving it green pin will be created in the Map screen. 
+If any user has extra resources and wishes to share it with other people, then he can create a “Give help” (Green Pin) card by clicking the karma icon and adding the details and on saving it green pin will be created in the Map screen. 
 
 ## Karma Points:
-  In order to motivate the people to help each other we have a feature know as Karma points. Karma points will be distributed to user who extend help to others. The user with highest karma points will be honoured in the Heroes page. 
-
+In order to motivate the people to help each other we have a feature know as Karma points. Karma points will be distributed to user who extend help to others. The user with highest karma points will be honoured in the Heroes page. 
 
 ## Heroes & Star Heroes:
 Through this app we would like to identify some of the heroes amongst us who is currently working for the society selflessly.
 Those personalities will be shown as special or star heroes and their work details and contact information will be shown in Profile page.
 If someone wants to extend help to special heroes so that they can eventually help others, it can be done through the app.
 
-
 ## Notification screen:
 All the notification which the user received are grouped inside the Notification/Alert screen.
 They provide the user with a timeline to view different activities that has taken place for a help he/she had posted or a help they have extended to others.
-
 
 ## Info Screen:
 -Information screen contains the guidelines people should follow in the current situation like since we are in Covid19 pandemic we have mentioned guidelines like social distancing, using masks etc. These guidelines will change depending upon the situation in that particular area.
@@ -177,7 +163,6 @@ You can find a running system to test at [callforcode.mybluemix.net](http://call
 ## Contributing
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
-
 
 ## Authors
 
