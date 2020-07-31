@@ -1,4 +1,4 @@
-# HelpMe
+# Karma
 
 ![Android CI](https://github.com/jesukaransachin/HelpMe/workflows/Android%20CI/badge.svg?branch=master)
 
