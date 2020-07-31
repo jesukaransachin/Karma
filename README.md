@@ -171,5 +171,3 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 * **Sanket Redekar** - Backend APIs - [wanderingcoderr](https://github.com/wanderingcoderr)
 * **Dylan Dsouza** - App & Backend APIs - [dsouzadyn](https://github.com/dsouzadyn)
 * **Yash Hemmady** - UI/UX
-
-See also the list of [contributors](https://github.com/Code-and-Response/Project-Sample/graphs/contributors) who participated in this project.
