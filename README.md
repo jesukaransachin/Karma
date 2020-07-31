@@ -142,8 +142,8 @@ Organisation can also share their employees’ ratings on our platform and the e
 The app is build using the IBM credits available for participating in the CFC, we would require funding to continue to use these services and third-party services. We also plan to develop the features we have mentioned in the future roadmap some of these features require IBM services like IBM NLP and IBM Watson services and we are looking for funding to develop the same. 
 
 ## Future technology Road Map: 
-IBM Natural Language processing (for sentiment analysis of the help created and rating the urgency and criticality of the help) 
-IBM Watson for enabling chatbot to answer frequently asked questions about a current situation and get contact information of government agencies and NGO's
+- IBM Natural Language processing (for sentiment analysis of the help created and rating the urgency and criticality of the help)
+- IBM Watson for enabling chatbot to answer frequently asked questions about a current situation and get contact information of government agencies and NGO's
 
 ## Getting started
 
