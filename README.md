@@ -46,7 +46,7 @@ Solving shortage of essentials resources to the common man:
 -	Users wanting to help others with the extra resources at their disposal e.g. food, masks, medicines etc can create pins and publish through the platform.
 -	Karma will act as NEXUS between the Help Seekers And The Change Makers!
 
-Objective:
+## Objective:
 -	Build the habit of Share & Care
 -	Build Empathy, Harmony & Tolerance in society.
 -	It will make access to help and resources if a similar situation must happen in the future.
@@ -72,31 +72,29 @@ This app can serve as a valid unique solution for faster sourcing of finding hel
 Help can be requested on behalf of others if someone does not have a smartphone.
 NGO’s can be onboarded or can use the app to find and help needy people.
 
-Flow to Get Help:
+## Flow to Get Help:
 1.	Click the ‘Karma’ icon.
 2.	Select “Need Help” button then the respective category and describe your need or add a video and post it.
 3.	A red pin will be created and all the user in the nearby location would be notified and can see the posted help in the app and can respond by just clicking ‘Ready to Help’ button.
 4.	User who posted the help will get a notification that someone is ready to help and can accept the help extended (in case of multiple ‘ready to help’ scenarios, seekers can decide by viewing their profile and checking the karma points they have earned and number of helps extended by him/her)and  make an informed decision to accept the help extended and can connect with the user.
 
 
-Important features of App:
+## Important features of App:
 
-
-Login Page:
+## Login Page:
 Login is quick and 2 step process.
 Login is designed as such that any novice or expert can use it seamlessly.
 User just need to enter the phone number and a 4 digit pin received on his sms .
 
-Profile Page:
+## Profile Page:
 User can enter his information on the Profile page.
 Users can complete their profile by entering informations  like Name, Address(To get location), Age(to understand whether the person is senior citizen), Email, Profile Image and any Government certified ID. Only name is mandatory.
 
 On Skipping the profile page, user current latitude and longitude  will be considered as his location and phone number will be considered as point of contact. 
-
 Users on completing their profile and on a successful KYC would be marked as verified on the app.
 
 
-Map page:
+## Map page:
    Map page is the landing page of the app. It shows Red pins(Need Help) and Green pins(Give Help) near you.
 Red pin is the help requested by people near you.
 Green pin are the people who wants to help others with some resources.
@@ -107,7 +105,7 @@ If seeker is looking something other than the listed category he can use ‘Othe
 Map page can be filtered by categories or user can search any location or resources in the search box.
 
 
-Need Help:
+## Need Help:
 If someone is looking for help, he/she can use the Karma icon in the Map screen.
 To request help the user has to select the respective category, add title and description, post images or can record video dictating their request and if urgent can mark it as urgent and can post it.
 
@@ -115,30 +113,28 @@ Note: The categories shown are dynamic it will depend on the current situation o
 Once the request is posted it will appear as red pin the Map screen.
 
 
-Extend Help from Map page:
+## Extend Help from Map page:
       People using the app can see the red pin near to their location and if they want to extend help, they can click the ‘Ready to Help’ button. On clicking the button, a notification is sent to the seeker, the seeker can then accept it and get the phone number and contact the person to complete his need. Here the motive to connect the help seeker with the change maker is achieved.
 
-
-
-Give Help:
+## Give Help:
      If any user has extra resources and wishes to share it with other people, then he can create a “Give help” (Green Pin) card by clicking the karma icon and adding the details and on saving it green pin will be created in the Map screen. 
 
-Karma Points:
+## Karma Points:
   In order to motivate the people to help each other we have a feature know as Karma points. Karma points will be distributed to user who extend help to others. The user with highest karma points will be honoured in the Heroes page. 
 
 
-Heroes & Star Heroes:
+## Heroes & Star Heroes:
 Through this app we would like to identify some of the heroes amongst us who is currently working for the society selflessly.
 Those personalities will be shown as special or star heroes and their work details and contact information will be shown in Profile page.
 If someone wants to extend help to special heroes so that they can eventually help others, it can be done through the app.
 
 
-Notification screen:
+## Notification screen:
 All the notification which the user received are grouped inside the Notification/Alert screen.
 They provide the user with a timeline to view different activities that has taken place for a help he/she had posted or a help they have extended to others.
 
 
-Info Screen:
+## Info Screen:
 -Information screen contains the guidelines people should follow in the current situation like since we are in Covid19 pandemic we have mentioned guidelines like social distancing, using masks etc. These guidelines will change depending upon the situation in that particular area.
 -Also, information screen contains helpline numbers that will help the 
 the user to quickly reach out to the concerned authorities in stressful time as sometimes it becomes difficult for people to find the correct point of contact.
