@@ -124,12 +124,19 @@ They provide the user with a timeline to view different activities that has take
 the user to quickly reach out to the concerned authorities in stressful time as sometimes it becomes difficult for people to find the correct point of contact.
 -Towards the bottom it contains the flow of App, how the app ‘KARMA’ works. The simple steps to guide the user.
 
+## Business Model
 
-## Project roadmap/Business Model: 
+### Project roadmap: 
 
 Users on the platform will be awarded with Karma points based on their activity on the app. These Karma points can be later redeemed on any of the services like airline booking, online purchases, taxi rides etc. Karma points can also be used to measure or rate the social behaviour of a customer applying for a Home loan, a student applying for a university program and organisation pitching for funding for an idea. 
-
 Organisation can also share their employees’ ratings on our platform and the employees and use any of our programs to generate a coupon and avail any of the services across travel, shopping etc 
+
+
+### Solution roadmap:
+
+Users on the platform will be awarded with Karma points based on their activity on the app. These Karma points can be later redeemed on any of the services like airline booking, online purchases, taxi rides etc. Karma points can also be used to measure or rate the social behaviour of a customer applying for a Home loan, a student applying for a university program and organisation pitching for funding for an idea.
+Organisation can also share their employees’ ratings on our platform and the employees and use any of our programs to generate a coupon and avail any of the services across travel, shopping etc
+
 
 ## Funding and sustainability:
 The app is build using the IBM credits available for participating in the CFC, we would require funding to continue to use these services and third-party services. We also plan to develop the features we have mentioned in the future roadmap some of these features require IBM services like IBM NLP and IBM Watson services and we are looking for funding to develop the same. 
