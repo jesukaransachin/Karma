@@ -29,11 +29,11 @@ Many countries have declared restrictive measures such as lockdown, shelter in p
 This has in turn resulted in several challenges as listed below
 
 Some challenges we are facing now 
-•	Shortage or non-availability of essentials.
-•	Reaching out to communities to best distribute limited available resources
-•	Requirement of credible information with fake and incorrect information available all around.
-•	Job losses and deteriorating financial conditions.
-•	Mass migration 
+-	Shortage or non-availability of essentials.
+-	Reaching out to communities to best distribute limited available resources
+-	Requirement of credible information with fake and incorrect information available all around.
+-	Job losses and deteriorating financial conditions.
+-	Mass migration 
 
 ### The idea
 
