@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:id="@+id/parentFrameLayout"
+        android:background="#00000000"
+
+        app:layout_anchor="@+id/bottomSheet"
+        app:layout_anchorGravity="bottom|end"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+        tools:context=".ui.createhelp.CreateHelpFragment">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:background="@drawable/topborder"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/parentCardView"
+            android:layout_marginRight="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+           android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="5dp">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:minHeight="?actionBarSize"
+            app:tabTextColor="@color/black"
+            android:layout_margin="5dp"
+            app:tabGravity="fill"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorColor="@android:color/transparent"
+             android:layout_gravity="center"
+            android:background="@color/white"
+            app:tabSelectedTextColor="@color/black"
+            app:tabBackground="@drawable/tab_selector"
+             >
+        </com.google.android.material.tabs.TabLayout>
+        </androidx.cardview.widget.CardView>>
+        </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/parentCardView"
+        android:id="@+id/containerLayout"/>
+
+<!--        <androidx.viewpager.widget.ViewPager-->
+<!--            android:id="@+id/viewPager"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+<!--        </androidx.viewpager.widget.ViewPager>-->
+    </RelativeLayout>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="searchClickListener"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="refreshClickListener"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="myLocationClickListener"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="viewModel"
+            type="com.ingrammicro.helpme.ui.home.HelpViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/coordinatorLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            tools:context=".ui.home.MapsFragment">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <androidx.fragment.app.FragmentContainerView
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/searchBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardUseCompatPadding="true">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp">
+
+                            <TextView
+                                android:id="@+id/placeholderText"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:drawableStart="@drawable/ic_maps_search_24dp"
+                                android:drawableLeft="@drawable/ic_maps_search_24dp"
+                                android:drawablePadding="8dp"
+                                android:gravity="center_vertical"
+                                android:hint="@string/maps_search_hint"
+                                android:onClick="@{searchClickListener}"
+                                android:paddingStart="16dp"
+                                android:paddingEnd="16dp"
+                                android:textSize="18sp" />
+
+                            <Button
+                                android:id="@+id/refreshButton"
+                                style="@style/RefreshIconButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end|center_vertical"
+                                android:onClick="@{refreshClickListener}"
+                                app:icon="@drawable/ic_baseline_refresh_24" />
+                        </FrameLayout>
+
+                        <com.mancj.materialsearchbar.MaterialSearchBar
+                            android:id="@+id/materialSearchBar"
+                            style="@style/MaterialSearchBarLight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:mt_hint="@string/maps_search_hint"
+                            app:mt_maxSuggestionsCount="0"
+                            app:mt_navIconEnabled="true"
+                            app:mt_textCursorTint="@color/black" />
+
+                        <FrameLayout
+                            android:id="@+id/progressLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_gravity="end"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp"
+                            android:visibility="gone">
+
+                            <ProgressBar
+                                android:id="@+id/progressBar"
+                                style="?android:attr/progressBarStyle"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center_vertical" />
+                        </FrameLayout>
+                    </FrameLayout>
+                </androidx.cardview.widget.CardView>
+
+                <HorizontalScrollView
+                    android:id="@+id/hor_chips"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/searchBar"
+                    android:clipToPadding="false"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:scrollbars="none">
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/chipGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:chipSpacing="8dp"
+                        app:singleLine="true" />
+                </HorizontalScrollView>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/floating_action_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hor_chips"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:contentDescription="@string/fab_content_desc"
+                    android:onClick="@{myLocationClickListener}"
+                    android:visibility="@{viewModel.myLocationButtonEnabled ? View.VISIBLE : View.GONE}"
+                    app:backgroundTint="@color/white"
+                    app:fabSize="mini"
+                    app:srcCompat="@drawable/ic_my_location_24dp" />
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewPager2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="80dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp" />
+            </RelativeLayout>
+
+            <com.google.android.material.bottomappbar.BottomAppBar
+                android:id="@+id/bottomAppBar"
+                style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                app:backgroundTint="@color/colorBottomAppBar"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                app:fabCradleMargin="8dp"
+                app:fabCradleRoundedCornerRadius="18dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/profileButton"
+                        style="@style/BottomBarButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:icon="@drawable/ic_bottom_bar_profile_24dp" />
+
+                    <Button
+                        android:id="@+id/heroesButton"
+                        style="@style/BottomBarButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:icon="@drawable/ic_bottom_bar_award_24dp" />
+
+                    <View
+                        android:layout_width="96dp"
+                        android:layout_height="1dp" />
+
+                    <Button
+                        android:id="@+id/notificationsButton"
+                        style="@style/BottomBarButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:icon="@drawable/ic_bottom_bar_notifications_24dp" />
+
+                    <Button
+                        android:id="@+id/informationButton"
+                        style="@style/BottomBarButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:icon="@drawable/ic_bottom_bar_information_24dp" />
+                </LinearLayout>
+            </com.google.android.material.bottomappbar.BottomAppBar>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="@color/primaryColor"
+                app:layout_anchor="@id/bottomAppBar"
+                app:srcCompat="@drawable/ic_fab_create_help" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="28dp"
+            android:src="@drawable/ic_create_new_help"
+            app:civ_circle_background_color="@color/primaryColor" />
+    </RelativeLayout>
+</layout>

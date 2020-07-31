@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.ingrammicro.helpme.fragments.LoginSelectionFragment"
+        android:label="Start Screen"
+        tools:layout="@layout/login_selection_fragment">
+        <action
+            android:id="@+id/action_mainFragment_to_phoneLoginFragment"
+            app:destination="@id/phoneLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/phoneLoginFragment"
+        android:name="com.ingrammicro.helpme.fragments.PhoneLoginFragment"
+        android:label=""
+        tools:layout="@layout/phone_login_fragment">
+        <action
+            android:id="@+id/action_phoneLoginFragment_to_otpEntryFragment"
+            app:destination="@id/otpEntryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateProfileFragment"
+        android:name="com.ingrammicro.helpme.fragments.UpdateProfileFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/update_profile_fragment">
+        <argument
+            android:name="phone"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.ingrammicro.helpme.ui.home.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps">
+        <action
+            android:id="@+id/navigate_to_photo_gallery"
+            app:destination="@id/photoGalleryDialogFragment" />
+        <action
+            android:id="@+id/navigate_to_user_profile"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/navigate_to_heroes"
+            app:destination="@id/heroesDialogFragment" />
+        <action
+            android:id="@+id/navigate_to_notifications"
+            app:destination="@id/notificationsFragment" />
+        <action
+            android:id="@+id/navigate_to_information"
+            app:destination="@id/informationFragment" />
+        <action
+            android:id="@+id/navigate_to_createhelp"
+            app:destination="@id/createHelptabFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/photoGalleryDialogFragment"
+        android:name="com.ingrammicro.helpme.ui.home.PhotoGalleryDialogFragment"
+        android:label="PhotoGalleryDialogFragment"
+        tools:layout="@layout/fragment_photo_gallery_dialog">
+        <argument
+            android:name="position"
+            app:argType="integer" />
+    </dialog>
+    <dialog
+        android:id="@+id/heroesDialogFragment"
+        android:name="com.ingrammicro.helpme.ui.heroes.HeroesDialogFragment"
+        android:label="fragment_heroes_dialog"
+        tools:layout="@layout/fragment_heroes_dialog">
+        <action
+            android:id="@+id/navigate_to_hero"
+            app:destination="@id/heroFragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/createHelptabFragment"
+        android:name="com.ingrammicro.helpme.ui.createhelp.CreateHelpTabFragment"
+        android:label="fragment_createhelp_dialog"
+        tools:layout="@layout/create_help_tab_fragment" />
+    <fragment
+        android:id="@+id/otpEntryFragment"
+        android:name="com.ingrammicro.helpme.fragments.OtpEntryFragment"
+        android:label=""
+        tools:layout="@layout/otp_entry_fragment">
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <argument
+            android:name="otp"
+            app:argType="integer" />
+        <argument
+            android:name="phone"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_otpEntryFragment_to_profileFragment"
+            app:destination="@id/updateProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.ingrammicro.helpme.fragments.ProfileFragment"
+        android:label="profile_fragment"
+        tools:layout="@layout/profile_fragment">
+        <argument
+            android:name="userId"
+            android:defaultValue=""
+            app:argType="string" />
+        <argument
+            android:name="readOnly"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_profileFragment_to_updateProfileFragment"
+            app:destination="@id/updateProfileFragment" />
+        <action
+            android:id="@+id/move_to_user_profile"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.ingrammicro.helpme.ui.notifications.NotificationsFragment"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/informationFragment"
+        android:name="com.ingrammicro.helpme.ui.information.InformationFragment"
+        android:label="fragment_information"
+        tools:layout="@layout/fragment_information" />
+    <fragment
+        android:id="@+id/heroFragment"
+        android:name="com.ingrammicro.helpme.ui.heroes.HeroFragment"
+        android:label="HeroFragment"
+        tools:layout="@layout/fragment_hero" />
+    <action
+        android:id="@+id/action_global_mapsFragment"
+        app:destination="@id/mapsFragment"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true" />
+</navigation>

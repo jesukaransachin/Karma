@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import
+            alias="v"
+            type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.ingrammicro.helpme.ui.createhelp.CreateHelpViewModel" />
+    </data>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/viewSnack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/parentFrameLayout"
+        android:background="#00000000"
+        >
+
+
+    <!--<layout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools">-->
+
+<!--    <data>-->
+<!--        <import-->
+<!--            alias="v"-->
+<!--            type="android.view.View" />-->
+
+<!--        <variable-->
+<!--            name="viewModel"-->
+<!--            type="com.ingrammicro.helpme.ui.createhelp.CreateHelpViewModel" />-->
+<!--    </data>-->
+
+
+
+
+
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bottomborder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:id="@+id/titleCardView"-->
+<!--                    android:layout_marginRight="20dp"-->
+<!--                    android:layout_marginBottom="20dp"-->
+<!--                    app:cardCornerRadius="5dp">-->
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:layout_marginLeft="2dp"-->
+<!--                        android:layout_marginRight="2dp"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:weightSum="1">-->
+
+<!--                        <com.google.android.material.button.MaterialButton-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_weight="0.5"-->
+<!--                            android:layout_marginLeft="5dp"-->
+<!--                            android:layout_marginRight="5dp"-->
+<!--                            app:iconTint="@android:color/transparent"-->
+<!--                            app:iconTintMode="add"-->
+<!--                            android:paddingTop="2dp"-->
+<!--                            android:paddingBottom="2dp"-->
+<!--                            android:text="Get Help"-->
+<!--                            android:textAllCaps="false"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="16sp"/>-->
+
+<!--                        <com.google.android.material.button.MaterialButton-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_weight="0.5"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginLeft="5dp"-->
+<!--                            android:layout_marginRight="5dp"-->
+<!--                            android:paddingTop="2dp"-->
+<!--                            android:paddingBottom="2dp"-->
+<!--                            android:text="Give Help"-->
+<!--                            android:textAllCaps="false"-->
+<!--                            android:textColor="@color/primaryTextColor"-->
+<!--                            android:textSize="16sp"-->
+<!--                            style="@style/Widget.AppCompat.Button.Borderless"-->
+<!--                            />-->
+<!--                    </LinearLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_above="@+id/confirmButton"
+                    android:layout_alignParentTop="true"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center_vertical"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="8dp"
+                        android:layout_gravity="left"
+                        android:orientation="vertical">
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:gravity="center"
+                            android:layout_alignParentLeft="true"
+
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:text="Choose Help Category"/>
+                        <ProgressBar
+                            android:id="@+id/categoryProgress"
+                            style="@android:style/Widget.ProgressBar.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:visibility="@{viewModel.isCategoryVisible ? v.VISIBLE:v.GONE}" />
+.....
+                        <HorizontalScrollView
+                            android:id="@+id/horizontalScollView"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clipToPadding="false"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:scrollbars="none">
+
+                            <com.google.android.material.chip.ChipGroup
+                                android:id="@+id/chipGroup"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:chipSpacing="8dp"
+                                app:singleSelection="true"
+                                app:singleLine="true" />
+
+
+
+                        </HorizontalScrollView>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:background="@drawable/ic_border_grey"
+                            android:gravity="left"
+                            android:layout_marginTop="5dp"
+                            android:padding="20dp"
+                            android:orientation="vertical">
+
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/titleField"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                app:endIconMode="custom"
+                                app:endIconDrawable="@drawable/ic_title"
+                                android:layout_marginBottom="5dp"
+                                app:endIconTint="@null"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/nameEditText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Title"
+                                    android:text="@={viewModel.title}"
+                                    android:inputType="textCapWords"
+                                    />
+<!--                                -->
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/descriptionField"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                app:endIconMode="custom"
+                                app:endIconTint="@null"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/descriptionEditText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp"
+                                    android:gravity="top"
+                                    android:hint="Description"
+                                    android:text="@={viewModel.description}"
+                                    android:lines="5"
+                                    android:maxLines="5"
+                                    android:inputType="textMultiLine|textCapSentences"
+                                     />
+<!--                                -->
+<!--                                -->
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_gravity="center"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="0.33"
+                                    android:layout_marginBottom="5dp"
+                                    app:cardCornerRadius="10dp">
+
+                                    <LinearLayout
+                                        android:layout_gravity="center"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <Button
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            style="@style/Widget.AppCompat.Button.Borderless"
+                                            android:padding="10dp"
+                                            android:backgroundTint="@android:color/transparent"
+                                            android:drawableTop="@drawable/ic_picture"
+                                            android:id="@+id/uploadImgButton1"
+                                            android:text="Add Photo"
+                                            android:textAllCaps="false"
+                                            android:textColor="@color/greyColor"/>
+
+
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/documentView1"
+                                            android:layout_alignParentLeft="true"
+                                            android:visibility="gone"
+                                            android:layout_centerVertical="true">
+                                            <ImageView
+                                                android:layout_width="60dp"
+                                                android:layout_height="60dp"
+                                                android:id="@+id/picture1Imageview1"
+                                                android:layout_margin="10dp"
+                                                android:layout_centerVertical="true"
+                                                android:visibility="visible">
+
+                                            </ImageView>
+
+
+                                            <ImageButton
+                                                android:id="@+id/cancelDocumentButton1"
+                                                android:layout_width="20dp"
+                                                android:layout_height="20dp"
+                                                android:layout_alignRight="@id/picture1Imageview1"
+                                                app:srcCompat="@drawable/ic_cancel"
+                                                android:backgroundTint="@android:color/transparent"
+                                                android:gravity="center"
+                                                />
+                                        </RelativeLayout>
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_gravity="center"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="0.33"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    app:cardCornerRadius="10dp">
+
+                                    <LinearLayout
+                                        android:layout_gravity="center"
+                                        android:layout_width="wrap_content"
+                                        android:background="@android:color/transparent"
+                                        android:layout_height="wrap_content">
+
+                                        <Button
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:padding="10dp"
+                                            style="@style/Widget.AppCompat.Button.Borderless"
+                                            android:backgroundTint="@android:color/transparent"
+                                            android:drawableTop="@drawable/ic_picture"
+                                            android:id="@+id/uploadImgButton2"
+                                            android:text="Add Photo"
+                                            android:textAllCaps="false"
+                                            android:textColor="@color/greyColor">
+
+                                        </Button>
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/documentView2"
+                                            android:layout_alignParentLeft="true"
+                                            android:visibility="gone"
+                                            android:layout_centerVertical="true">
+                                            <ImageView
+                                                android:layout_width="60dp"
+                                                android:layout_height="60dp"
+                                                android:id="@+id/picture1Imageview2"
+                                                android:layout_margin="10dp"
+                                                android:layout_centerVertical="true"
+                                                android:visibility="visible">
+
+                                            </ImageView>
+
+
+                                            <ImageButton
+                                                android:id="@+id/cancelDocumentButton2"
+                                                android:layout_width="20dp"
+                                                android:layout_height="20dp"
+                                                android:layout_alignRight="@id/picture1Imageview2"
+                                                app:srcCompat="@drawable/ic_cancel"
+                                                android:backgroundTint="@android:color/transparent"
+                                                android:gravity="center"
+                                                />
+                                        </RelativeLayout>
+
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_gravity="center"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="0.33"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    app:cardCornerRadius="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center">
+
+                                        <Button
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            style="@style/Widget.AppCompat.Button.Borderless"
+                                            android:padding="10dp"
+                                            android:backgroundTint="@android:color/transparent"
+                                            android:drawableTop="@drawable/ic_picture"
+                                            android:id="@+id/uploadImgButton3"
+                                            android:text="Add Photo"
+                                            android:textAllCaps="false"
+                                            android:textColor="@color/greyColor">
+
+                                        </Button>
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/documentView3"
+                                            android:layout_alignParentLeft="true"
+                                            android:visibility="gone"
+                                            android:layout_centerVertical="true">
+                                            <ImageView
+                                                android:layout_width="60dp"
+                                                android:layout_height="60dp"
+                                                android:id="@+id/picture1Imageview3"
+                                                android:layout_margin="10dp"
+                                                android:layout_centerVertical="true"
+                                                android:visibility="visible">
+
+                                            </ImageView>
+
+
+                                            <ImageButton
+                                                android:id="@+id/cancelDocumentButton3"
+                                                android:layout_width="20dp"
+                                                android:layout_height="20dp"
+                                                android:layout_alignRight="@id/picture1Imageview3"
+                                                app:srcCompat="@drawable/ic_cancel"
+                                                android:backgroundTint="@android:color/transparent"
+                                                android:gravity="center"
+                                                />
+                                        </RelativeLayout>
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                            </LinearLayout>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                app:cardCornerRadius="10dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center">
+
+                                    <Button
+                                        android:padding="20dp"
+                                        android:id="@+id/addVideoButton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@null"
+                                        android:layout_margin="15dp"
+                                        style="?android:attr/borderlessButtonStyle"
+                                        android:layout_centerInParent="true"
+                                        android:drawableTop="@drawable/ic_plus"
+                                        android:text="Add Video"
+                                        android:textColor="@color/greyColor"
+                                        android:textAllCaps="false"
+                                        app:backgroundTint="@color/white" />
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/videoView"
+                                        android:layout_alignParentLeft="true"
+                                        android:visibility="gone"
+                                        android:layout_centerVertical="true">
+                                        <VideoView
+                                            android:layout_width="60dp"
+                                            android:layout_height="60dp"
+                                            android:id="@+id/videoThumbnail"
+                                            android:layout_margin="10dp"
+                                            android:layout_centerVertical="true"
+                                            android:visibility="visible">
+
+                                        </VideoView>
+
+
+                                        <ImageButton
+                                            android:id="@+id/cancelVideoFile"
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_alignRight="@id/videoThumbnail"
+                                            app:srcCompat="@drawable/ic_cancel"
+                                            android:backgroundTint="@android:color/transparent"
+                                            android:gravity="center"
+                                            />
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="15dp"
+                                android:id="@+id/highPriorityRelativeLayout"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_gravity="center"
+                                    android:layout_width="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:text="Is the help needed urgent ?">
+
+                                </TextView>
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="2dp"
+                                    android:gravity="center"
+
+                                    android:layout_alignParentRight="true"
+                                    android:orientation="horizontal">
+                                    <CheckBox
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/priorityChecked"
+                                        android:buttonTint="@color/primaryColor"
+                                        android:layout_centerInParent="true"
+                                        android:gravity="center"></CheckBox>
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+
+
+                <Button
+                    android:id="@+id/confirmButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="28dp"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/button_confirm_text"
+                    android:visibility="@{viewModel.isProgressbarVisible ? v.GONE:v.VISIBLE}"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/phoneField" />
+
+<!--                -->
+
+                <ProgressBar
+                    android:id="@+id/progressBarOTP"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="28dp"
+                    android:visibility="@{viewModel.isProgressbarVisible ? v.VISIBLE:v.GONE}"
+                    android:indeterminateTint="@color/primaryColor"
+                    android:indeterminate="true"
+                    android:layout_alignParentBottom="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/phoneField"/>
+            </RelativeLayout>
+<!--            -->
+
+        <!--        -->
+
+    </FrameLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

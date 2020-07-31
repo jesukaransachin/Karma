@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="childPosition"
+            type="int" />
+    </data>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    >
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:paddingTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#F2F2F2"
+                    android:id="@+id/categoryImage"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/notifiTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Grocery For Family of 2gjqfgkhlj;ka'SJLHKGJMKjkdafyodgjdahsjLK:Lsdefuwt8q9pa;LSKJDHGEHWAkLsjdhjgyauioSDGAHJK;LS;'CL;KLHJKSLAKSD[P8RYOWPUQIP'KALSKXJZ,NMTUYTIUYIUOIPO[P'IOYDHHGFJGJHKLJK;/.VNCVBDGSFDHUIUOPRUTEYRDHFJG;';KVBCBCVNM,"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="16sp"
+                        android:maxLines="3"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/helpItemType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:text="Get Help"
+                        android:textAppearance="@style/AppTheme.HelpChip"
+                        android:textColor="@color/white"
+                        app:chipBackgroundColor="@color/chipRed"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        app:layout_constraintVertical_bias="1.0" />
+
+
+
+                        <TextView
+                            android:id="@+id/notifiDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/greyColor"
+                            android:textSize="12sp"
+                            android:maxLines="3"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                             />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>
+</layout>

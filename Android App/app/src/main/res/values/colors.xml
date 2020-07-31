@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#ffd632</color>
+    <color name="primaryDarkColor">#c8a500</color>
+    <color name="primaryLightColor">#ffff69</color>
+    <color name="primaryTextColor">#000000</color>
+    <color name="suffixTextColor">#27CD58</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="greyColor">#A8A8A8</color>
+    <color name="purple">#4538B1</color>
+    <color name="chipRed">#F34454</color>
+    <color name="buttonGreen">#2CBA8F</color>
+    <color name="background">#F8F9F9</color>
+    <color name="chipGreen">#F34454</color>
+    <color name="light_grey_color">#F2F2F2</color>
+    <color name="color_snackbar_bg">#F8B72F</color>
+    <color name="bottom_bar">#008577</color>
+    <color name="colorBottomAppBar">#131313</color>
+    <color name="colorNeedHelp">#F34454</color>
+    <color name="colorGiveHelp">#2CBA8F</color>
+    <color name="colorHighPriority">#F34454</color>
+    <color name="lightPurple">#945cab</color>
+    <color name="lightYellow">#fbce63</color>
+    <color name="profileDivider">#cdcdcd</color>
+    <color name="colorTextLink">#43CAED</color>
+</resources>

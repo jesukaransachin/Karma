@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+        font-family: 'Google Sans';
+        src: url('googlesans_regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+            
+        }
+        body {
+            box-sizing: border-box;
+            margin: 0;
+            font-family: 'Google Sans';
+        }
+        .info {
+            font-size: 24px;
+            font-style: normal;
+        }
+        .sub-info {
+            font-size: 18px;
+            font-style: normal;
+            margin: 12px 0;
+        }
+        #Path_2637 {
+            fill: transparent;
+            stroke: rgba(255,214,73,1);
+            stroke-width: 2px;
+            stroke-linejoin: miter;
+            stroke-linecap: butt;
+            stroke-miterlimit: 4;
+            shape-rendering: auto;
+        }
+        .Path_2642 {
+            overflow: visible;
+            
+            width: 2px;
+            height: 59.065px;
+            margin-left: 50%;
+        }
+        .desc-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .desc-container-2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin: 12px 0;
+        }
+        .desc-img {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+        }
+        .desc-content {
+            display: inline-block;
+            height: 50px;
+            width: 300px;
+            box-sizing: border-box;
+            padding: 5px;
+        }
+        #Path_2642 {
+            fill: transparent;
+            stroke: rgba(255,214,73,1);
+            stroke-width: 2px;
+            stroke-linejoin: miter;
+            stroke-linecap: round;
+            stroke-dasharray: 5 10;
+            stroke-dashoffset: 0;
+            stroke-miterlimit: 4;
+            shape-rendering: auto;
+        }
+        .ellipse-container {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            margin: 0 auto auto -13px;
+        }
+        .Ellipse_342 {
+            overflow: visible;
+            width: 14px;
+            height: 14px;
+            position: absolute;
+        }
+        #Ellipse_342 {
+            fill: transparent;
+            stroke: rgba(255,214,73,1);
+            stroke-width: 1px;
+            stroke-linejoin: miter;
+            stroke-linecap: butt;
+            stroke-miterlimit: 4;
+            shape-rendering: auto;
+        }
+        .Ellipse_341 {
+            overflow: visible;
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            margin-left: 2px;
+            margin-top: 2px;
+        }
+        #Ellipse_341 {
+            fill: rgba(255,214,73,1);
+            stroke: rgba(255,214,73,1);
+            stroke-width: 1px;
+            stroke-linejoin: miter;
+            stroke-linecap: butt;
+            stroke-miterlimit: 4;
+            shape-rendering: auto;
+        }
+        .yellow-container {
+            border-radius: 15px;
+            
+            padding: 0;
+            overflow: hidden;
+        }
+        .yellow-content {
+            display: block;
+            box-sizing: border-box;
+            padding: 12px;   
+        }
+        .btn-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .btn-orange {
+            border-style: solid;
+            border-color: rgba(255,87,73,1);
+            color: rgba(255,87,73,1);
+            margin: 12px 0;
+            border-radius: 12px;
+            box-sizing: border-box;
+            padding: 5px;
+            width: 49%;
+            border-width: 2px;
+            height: 42px;
+            background: none;
+        }
+        .btn-yellow {
+            border-style: solid;
+            border-color: rgba(255,214,73,1);
+            margin: 12px 0;
+            border-radius: 12px;
+            box-sizing: border-box;
+            padding: 5px;
+            width: 100%;
+            border-width: 2px;
+            height: 42px;
+            background: none;
+        }
+        .underlay {
+            height: 70%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            position: absolute;
+            background-color: rgba(235,235,235,1);
+        }
+        .helping-hand {
+            background-image: url(./helpinghand.png);
+            min-height: 300px;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .container {
+            box-sizing: border-box;
+            padding: 15px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <div class="underlay"></div>
+        <div class="container info">Information</div>
+        <div class="helping-hand"></div>
+        <div class="container">
+            <div class="sub-info">Guidelines to face current situation</div>
+        <ul class="yellow-container">
+            <li class="yellow-content" style="background-color: rgba(255,214,73,1);"><img src="caret.svg" style="padding-right: 5px;"/>Maintain social distancing.</li>
+            <li class="yellow-content" style="background-color: rgba(252,218,102,1)"><img src="caret.svg" style="padding-right: 5px;"/>Self assess before helping others.</li>
+            <li class="yellow-content" style="background-color: rgba(252,218,102,1)"><img src="caret.svg" style="padding-right: 5px;"/>Check for updates by local civic
+                authorities</li>
+            <li class="yellow-content" style="background-color: rgba(253,236,175,1)"><img src="caret.svg" style="padding-right: 5px;"/>For more information click here</li>
+        </ul>
+        <div>
+            <div class="btn-container">
+                <button class="btn-orange"><img src="call.svg" style="padding-right: 5px;vertical-align: middle;"/>Call Helpline</button>
+                <button class="btn-orange"><img src="email.svg" style="padding-right: 5px;vertical-align: middle;"/>Mail Helpline</button>
+            </div>
+            <div>
+                <button class="btn-yellow">More useful resources<img src="caret.svg" style="padding-left: 5px;vertical-align: middle;"/></button>
+                <div>
+                    <div class="sub-info">How Helpme works</div>
+                    <div class="desc-container">
+                        <div class="desc-img">
+                            <img src="a.svg">
+                        </div>
+                        <div class="desc-content">One click to get help or give help.</div>
+                    </div>
+                </div>
+                <div>
+
+                    <svg class="Path_2637" viewBox="6293 511.866 341.438 2">
+                        <path id="Path_2637" d="M 6293 511.8655090332031 C 6636.00927734375 511.8655090332031 6634.4375 511.8655090332031 6634.4375 511.8655090332031">
+                        </path>
+                    </svg>
+                    <svg class="Path_2642" viewBox="6398.036 829.865 2 57.065">
+                        <path id="Path_2642" d="M 6398.0361328125 829.865478515625 L 6398.0361328125 886.9308471679688">
+                        </path>
+                    </svg>
+                    <div class="ellipse-container">
+                        <svg class="Ellipse_341">
+                            <ellipse id="Ellipse_341" rx="5" ry="5" cx="5" cy="5">
+                            </ellipse>
+                        </svg>
+                        <svg class="Ellipse_342">
+                            <ellipse id="Ellipse_342" rx="7" ry="7" cx="7" cy="7">
+                            </ellipse>
+                        </svg>
+                    </div>
+                    
+                
+                
+                
+                </div>
+                <div>
+                    
+                    <div class="desc-container-2">
+                        <div style="margin: 12px 0;">Pins to help you find your way to help someone
+                            in need</div>
+                        
+                            <img src="Intersection_6.png">
+                        
+                    </div>
+                </div>
+                <div>
+
+                    <svg class="Path_2637" viewBox="6293 511.866 341.438 2">
+                        <path id="Path_2637" d="M 6293 511.8655090332031 C 6636.00927734375 511.8655090332031 6634.4375 511.8655090332031 6634.4375 511.8655090332031">
+                        </path>
+                    </svg>
+                    <svg class="Path_2642" viewBox="6398.036 829.865 2 57.065">
+                        <path id="Path_2642" d="M 6398.0361328125 829.865478515625 L 6398.0361328125 886.9308471679688">
+                        </path>
+                    </svg>
+                    <div class="ellipse-container">
+                        <svg class="Ellipse_341">
+                            <ellipse id="Ellipse_341" rx="5" ry="5" cx="5" cy="5">
+                            </ellipse>
+                        </svg>
+                        <svg class="Ellipse_342">
+                            <ellipse id="Ellipse_342" rx="7" ry="7" cx="7" cy="7">
+                            </ellipse>
+                        </svg>
+                    </div>
+                    
+                
+                
+                
+                </div>
+                <div>
+                    <div class="desc-container">
+                        <div class="desc-content">One place to action on your request
+                            &amp; know about who wants to help you</div>
+                        <div class="desc-img">
+                            <img src="a.svg">
+                        </div>
+                    </div>
+                </div>
+                <div>
+
+                    <svg class="Path_2637" viewBox="6293 511.866 341.438 2">
+                        <path id="Path_2637" d="M 6293 511.8655090332031 C 6636.00927734375 511.8655090332031 6634.4375 511.8655090332031 6634.4375 511.8655090332031">
+                        </path>
+                    </svg>
+                    <svg class="Path_2642" viewBox="6398.036 829.865 2 57.065">
+                        <path id="Path_2642" d="M 6398.0361328125 829.865478515625 L 6398.0361328125 886.9308471679688">
+                        </path>
+                    </svg>
+                    <div class="ellipse-container">
+                        <svg class="Ellipse_341">
+                            <ellipse id="Ellipse_341" rx="5" ry="5" cx="5" cy="5">
+                            </ellipse>
+                        </svg>
+                        <svg class="Ellipse_342">
+                            <ellipse id="Ellipse_342" rx="7" ry="7" cx="7" cy="7">
+                            </ellipse>
+                        </svg>
+                    </div>
+                    
+                
+                
+                </div>
+                <div>
+                    <div class="desc-container">
+                        <div class="desc-img">
+                            <img src="b.svg">
+                        </div>
+                        <div class="desc-content">Get to know the selfless heroes helping
+                            and the overall statistics.</div>
+                        
+                    </div>
+                </div>
+                <div>
+
+                    <svg class="Path_2637" viewBox="6293 511.866 341.438 2">
+                        <path id="Path_2637" d="M 6293 511.8655090332031 C 6636.00927734375 511.8655090332031 6634.4375 511.8655090332031 6634.4375 511.8655090332031">
+                        </path>
+                    </svg>
+                    <svg class="Path_2642" viewBox="6398.036 829.865 2 57.065">
+                        <path id="Path_2642" d="M 6398.0361328125 829.865478515625 L 6398.0361328125 886.9308471679688">
+                        </path>
+                    </svg>
+                    <div class="ellipse-container">
+                        <svg class="Ellipse_341">
+                            <ellipse id="Ellipse_341" rx="5" ry="5" cx="5" cy="5">
+                            </ellipse>
+                        </svg>
+                        <svg class="Ellipse_342">
+                            <ellipse id="Ellipse_342" rx="7" ry="7" cx="7" cy="7">
+                            </ellipse>
+                        </svg>
+                    </div>
+                    
+                
+                
+                </div>
+                <div>
+                    <div class="desc-container">
+                        <div class="desc-content">Timely notifying the status of your help.</div>
+                        <div class="desc-img">
+                            <img src="c.svg">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

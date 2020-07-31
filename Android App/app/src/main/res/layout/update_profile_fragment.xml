@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import
+            alias="v"
+            type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.ingrammicro.helpme.viewmodels.UpdateProfileViewModel" />
+    </data>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/update_profile_bg_yellow"
+    tools:context=".fragments.UpdateProfileFragment">
+
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Skip"-->
+<!--        android:id="@+id/skipButton"-->
+<!--        android:layout_margin="8dp"-->
+<!--       android:textSize="17sp"-->
+<!--        style="?android:attr/borderlessButtonStyle"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:textColor="@color/black"-->
+<!--       app:iconTint="@color/black"-->
+<!--        android:background="@null"-->
+<!--        app:icon="@drawable/ic_right_arrow"-->
+<!--        app:iconGravity="textEnd"-->
+<!--        />-->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+         android:layout_marginBottom="20dp"
+        android:layout_marginTop="28dp"
+        app:cardCornerRadius="10dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/saveProfileButton">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/profileLinearLayout">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/skipButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+
+            android:insetRight="-4dp"
+            android:text="Skip"
+            android:textAllCaps="false"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"
+            app:backgroundTint="#FFFFFF"
+            app:icon="@drawable/ic_arrow_right"
+            app:iconGravity="textEnd"
+            app:iconPadding="6dp"
+            app:iconTint="@android:color/darker_gray" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="-50dp"
+
+                android:layout_below="@+id/profileImageLinearlayout"
+               android:background="@drawable/ic_border_grey">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nameField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginEnd="28dp"
+            app:endIconTint="@null"
+            android:layout_marginRight="28dp"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/ic_user"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nameEditText"
+                android:hint="Full Name"
+                android:text="@={viewModel.fullName}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="28dp"
+            app:endIconTint="@null"
+            android:layout_marginRight="28dp"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/ic_email"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:text="@={viewModel.email}"
+                android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ageFiled"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="28dp"
+            app:endIconTint="@null"
+            android:layout_marginRight="28dp"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/ic_cake"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Age"
+                android:text="@={viewModel.age}"
+                android:maxLength="2"
+                android:inputType="number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/addressField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="28dp"
+            app:endIconTint="@null"
+            android:layout_marginRight="28dp"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/ic_location"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/addressEditText"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:hint="Address"
+                android:gravity="top"
+                android:maxLines="4"
+                android:lines="3"
+                android:text="@={viewModel.address}"
+                android:inputType="textMultiLine" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginEnd="28dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <Button
+            android:padding="20dp"
+            android:id="@+id/documentAddButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_margin="15dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_centerInParent="true"
+            android:drawableTop="@drawable/ic_plus"
+            android:text="@string/governement_issued_id_text"
+            android:textColor="@color/greyColor"
+            android:textAllCaps="false"
+            app:backgroundTint="@color/white" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/documentView"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone"
+        android:layout_centerVertical="true">
+    <ImageView
+        android:id="@+id/documentImgVw"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"
+        android:visibility="visible">
+    </ImageView>
+
+        <ProgressBar
+            android:id="@+id/documentProgress"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="@{viewModel.isdocuPicProgressbarVisible ? v.VISIBLE:v.GONE}" />
+
+
+
+        <ImageButton
+        android:id="@+id/cancelDocumentButton"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignRight="@id/documentImgVw"
+        android:src="@drawable/ic_cancel"
+        android:visibility="@{viewModel.isdocuPicProgressbarVisible ? v.GONE:v.VISIBLE}"
+        android:backgroundTint="@android:color/transparent"
+        android:gravity="center"
+         />
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginStart="28dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="28dp"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="14sp"
+            android:layout_toLeftOf="@+id/emailphoneCardvw"
+            android:text="A help can contact me on">
+
+        </TextView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/emailphoneCardvw"
+                android:layout_alignParentRight="true"
+                android:background="@color/white"
+                app:cardCornerRadius="3dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:src="@drawable/ic_email"
+                    android:padding="5dp"
+                    android:id="@+id/emailDefaultButton"
+                    android:layout_marginLeft="8dp"
+                    android:tint="@color/black"
+                    android:background="@{viewModel.isPhoneDefaultContact()? @drawable/tab_background_unselected:@drawable/btn_bg_selected}"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="25dp"></ImageButton>
+
+
+<!--                android:background="@{viewModel.isPhoneDefaultContact()? @color/white:@color/primaryColor}"-->
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:src="@drawable/ic_call"
+                    android:layout_marginLeft="8dp"
+                    android:padding="5dp"
+                    android:tint="@color/black"
+                    android:id="@+id/phoneDefaultButton"
+                    android:background="@{viewModel.isPhoneDefaultContact()? @drawable/btn_bg_selected:@drawable/tab_background_unselected}"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="25dp"></ImageButton>
+<!--                android:onClick="@{() -> viewModel.onPhoneDefaultClick()"-->
+
+            </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+            </LinearLayout>
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_below="@+id/skipButton"
+             android:id="@+id/profileImageLinearlayout"
+            android:background="@drawable/ic_outer_border">
+            <ImageView
+                android:id="@+id/profileImgVw"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:scaleType="centerInside"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_profile_add">
+            </ImageView>
+
+            <ProgressBar
+                android:id="@+id/profilePicProgress"
+                style="@android:style/Widget.ProgressBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="@{viewModel.isProfilePicProgressbarVisible ? v.VISIBLE:v.GONE}" />
+<!--            -->
+        </RelativeLayout>
+    </RelativeLayout>
+        </ScrollView>
+    <Button
+        android:id="@+id/saveProfileButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="28dp"
+
+        android:layout_alignParentBottom="true"
+        android:text="@string/button_save_text"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="@{viewModel.isProgressbarVisible ? v.GONE:v.VISIBLE}"
+        app:layout_constraintTop_toBottomOf="@+id/phoneField" />
+
+        <ProgressBar
+            android:id="@+id/progressBarOTP"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="28dp"
+
+            android:indeterminateTint="@color/primaryColor"
+            android:indeterminate="true"
+            android:visibility="@{viewModel.isProgressbarVisible ? v.VISIBLE:v.GONE}"
+            android:layout_alignParentBottom="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phoneField"/>
+
+
+<!--        <ProgressBar-->
+<!--            android:id="@+id/progressbar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="45dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:visibility="@{viewModel.isProgressbarVisible ? v.VISIBLE:v.GONE}"-->
+<!--             android:indeterminate="true"-->
+<!--            android:indeterminateTintMode="src_atop"-->
+<!--            android:indeterminateTint="@color/primaryDarkColor"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:layout_centerInParent="true"/>-->
+
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
+
+</layout>

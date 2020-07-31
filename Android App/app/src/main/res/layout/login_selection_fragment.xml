@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/framelayoutImage"
+    android:layout_above="@+id/linlayBottomButton"
+    android:layout_marginBottom="-60dp"
+    tools:context=".fragments.LoginSelectionFragment">
+
+
+    <ImageView
+        android:id="@+id/imgvwBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/start_bg1"
+        />
+    <ImageView
+        android:id="@+id/imgvwBg1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/start_bg1"
+        />
+
+</FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_bg_transparent"
+        ></FrameLayout>
+<LinearLayout
+    android:id="@+id/linlayBottomButton"
+    android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical"
+
+    android:layout_height="wrap_content">
+<!--    android:background="#80000000"-->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/otpLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/login_with_otp_text"
+        android:textAllCaps="false"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:icon="@drawable/ic_right_arrow"
+        app:iconGravity="end"
+        app:iconTint="@android:color/transparent"
+        app:iconTintMode="add" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="0.3"
+            android:background="@color/greyColor">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="or"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/greyColor"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="0.3"
+            android:background="@color/greyColor">
+
+
+        </TextView>
+
+    </LinearLayout>
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:text="Continue with">
+
+    </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+
+
+            android:weightSum="1">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                app:iconTint="@android:color/transparent"
+                app:iconTintMode="add"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="@string/continue_with_google"
+                android:textAllCaps="false"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="17sp"
+                app:backgroundTint="@android:color/white"
+                app:icon="@drawable/google"
+                app:iconGravity="start" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="@string/continue_with_fb"
+                android:textAllCaps="false"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="17sp"
+                app:iconTint="@android:color/transparent"
+                app:iconTintMode="add"
+                app:backgroundTint="@android:color/white"
+                app:icon="@drawable/fblogo"
+                app:iconGravity="start" />
+
+
+
+        </LinearLayout>
+
+<!--        <TextView-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        android:textAppearance="?android:textAppearanceSmall"-->
+<!--        android:text="@string/terms_condition">-->
+
+<!--    </TextView>-->
+
+</LinearLayout>
+</RelativeLayout>

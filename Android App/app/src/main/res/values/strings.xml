@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">Karma</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_screen_text">Enter your mobile number, we will send you an SMS to verify</string>
+    <string name="otp_screen_text">Enter the 4 digit PIN received</string>
+    <string name="distance_format">%s Km</string>
+    <string name="otp_timer_text">Resend PIN in 0:30</string>
+    <string name="otp_resend_text">Resend PIN</string>
+    <string name="button_confirm_text">Confirm</string>
+    <string name="button_continue_text">Continue</string>
+    <string name="button_save_text">Save</string>
+    <string name="suffix_send_otp_text">Send OTP</string>
+    <string name="login_with_otp_text">Login via Phone</string>
+    <string name="continue_with_fb">Facebook</string>
+    <string name="continue_with_google">Google</string>
+    <string name="content_description">Dummy content description</string>
+    <string name="terms_condition">By signing in you are agreeing to our \n Terms and Privacy Policy</string>
+    <string name="name_placeholder">Ricardo Joseph</string>
+    <string name="email_placeholder">ricardojoseph@gmail.com</string>
+    <string name="edit_profile_button">Edit Profile</string>
+    <string name="karma_points_text">Karma Points</string>
+    <string name="helped_text">Helped</string>
+    <string name="governement_issued_id_text">Add a government issued ID</string>
+    <string name="full_name_error">Please enter Full Name</string>
+    <string name="help_created_success">Help created successfully!!!</string>
+    <string name="notification_empty">No notification found</string>
+    <string name="email_error">Please enter valid Email</string>
+    <string name="error_msg">Something went wrong...</string>
+    <string name="no_items_placeholder">No items to show</string>
+    <string name="has_help_fullfilled">Has your help been fullfilled?</string>
+    <string name="maps_search_hint">Search for categories / location</string>
+    <string name="fab_content_desc">my location</string>
+
+    <string name="error_rest_timeout">Your request is timed out.</string>
+    <string name="error_rest_network">No internet connection</string>
+    <string name="error_rest_unexpected">Something went wrong</string>
+
+    <string name="content_hero">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="hero_sonu_sood">"In May 2020, during the nationwide lockdown due to the COVID-19 pandemic, Sood helped thousands of stranded Indian migrant workers to reach their homes throughout India by arranging buses, special trains and chartered flights for them. His charity social service during the pandemic was lauded and was hailed as a real life hero in India. On July 25th 2020, during Covid19 pandemic time, a video of the farmer's daughters ploughing the field by working like bulls with yoke on their shoulders went viral over social media, Sonu Sood sent the family with a tractor by evening."</string>
+    <string name="hero_rana_ayub">Today we have reached a landmark figure of helping sixteen thousand families with food and relief material that will last them for two weeks. Besides Mumbai and Greater Mumbai, we have reached to Sangli, Gadchiroli, Kurkheda, Bhamragarh, Aheri and other villages in Vidarbha. We procured 20 thousand litres of milk from farmers in Solapur to ease their stress and later distributed to the needy. In Antop Hill, Wadala, Kurla, Sewri, Dharavi, Mumbra, Mira Road, we have reached out to five thousand families in three days. Through our relief work, we also came across migrants who have been walking barefoot all the way from Mumbai to Uttar Pradesh, walking 15000 thousand kilometres on feet. We have made sure to extend help to them along with ten lac migrants in the city who are anxious about their future. In terms of numbers, in the last three weeks, we have distributed eighty thousand kilo rice, fifty thousand kilo dal, hundred thousand kilo flour, and fifty thousand litres of sunflower oil among other essentials.</string>
+    <string name="hero_shanti_chuahan">Her initiative began in late March when a friend called her in the wee hours to inform her about 1800 migrant workers who were stuck in the city and had not eaten for the whole day.she revealed that she and her friend decided to act immediately. The Mahasrashtra government helped them in their initiave and Chauhan has been feeding these migrant workers and other people in need on the streets of the city every day.</string>
+    <string name="know_more">To know more</string>
+    <string name="action_get_in_contact">Get in contact</string>
+    <string name="hero_youtube"><a href="https://www.youtube.com/watch?v=sbEj7M3aZIg">https://www.youtube.com/watch?v=sbEj7M3aZIg</a></string>
+    <string name="hero_youtube_link">https://www.youtube.com/watch?v=sbEj7M3aZIg</string>
+
+    <string name="settings">Settings</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="no_location_detected">
+        No location detected. Make sure location is enabled on the device.
+    </string>
+    <string name="permission_denied_explanation">
+        Location permission is required to use the application. Click on setting to turn on the location permission.
+    </string>
+    <string name="permission_rationale">
+        Location permission is needed for core functionality
+    </string>
+    <string name="location_not_enabled">
+        To continue, turn on device location. For details, go to the location settings.
+    </string>
+    <string name="title_error">Please enter Title</string>
+    <string name="desc_error">Please enter Description</string>
+    <string name="image_error">Please add an Image</string>
+    <string name="category_error">Please select Category</string>
+
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="default_notification_channel_name" translatable="true">Help</string>
+    <string name="fcm_message">FCM Message</string>
+
+    <string-array name="category_ids">
+        <item>c1</item>
+        <item>c2</item>
+        <item>c3</item>
+        <item>c4</item>
+        <item>c5</item>
+        <item>c6</item>
+    </string-array>
+
+    <array name="category_icons">
+        <item>@drawable/ic_category_basket</item>
+        <item>@drawable/ic_category_medics</item>
+        <item>@drawable/ic_category_mask</item>
+        <item>@drawable/ic_category_fruits</item>
+        <item>@drawable/ic_category_sanit</item>
+        <item>@drawable/ic_category_others</item>
+    </array>
+</resources>

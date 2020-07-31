@@ -1,0 +1,21 @@
+---
+applications:
+  - instances: 1
+    timeout: 180
+    name: nodejsexpressapppdest
+    buildpack: sdk-for-nodejs
+    command: npm start
+    disk_quota: 1G
+    memory: 128MB
+    domain: eu-gb.mybluemix.net
+    host: nodejs-express-app-pdest
+    services:
+      - nodejs-express-app-p-cloudobjectstor-159299769632-
+      - nodejs-express-app-p-cloudant-1592997751795-89279
+    env:
+      OPTIMIZE_MEMORY: true
+      JWT_TOKEN_SECRET: <Jwt Token Secret>
+      JWT_REFRESH_TOKEN_SECRET: <Jwt Refresh Token Secret>
+      TWILIO_SID: <Your Twilio SID>
+      TWILIO_AUTH_TOKEN: <Your Twilio Auth Token>
+      TWILIO_PHONE: <Twilio Phone Number>

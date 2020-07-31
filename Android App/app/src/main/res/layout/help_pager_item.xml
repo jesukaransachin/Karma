@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.home.MapsFragment">
+
+    <data>
+
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="itemPosition"
+            type="int" />
+
+        <variable
+            name="item"
+            type="com.ingrammicro.helpme.data.model.Help" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{clickListener}"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    app:cardUseCompatPadding="true"
+                    app:contentPaddingBottom="8dp"
+                    app:contentPaddingLeft="32dp"
+                    app:contentPaddingRight="8dp"
+                    app:contentPaddingTop="34dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@{item.title}"
+                            android:textColor="#2D3036"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxHeight="72dp"
+                            android:scrollbars="vertical"
+                            android:text="@{item.description}"
+                            android:textColor="#2D3036"
+                            android:textSize="14sp"
+                            android:visibility="gone" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/shortAddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:drawableStart="@drawable/ic_short_address_24dp"
+                                android:drawableLeft="@drawable/ic_short_address_24dp"
+                                android:drawablePadding="8dp"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:maxLines="2"
+                                android:text="@{item.userInfo.shortAddress}"
+                                android:textColor="#6D6D6D"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/distance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/shortAddress"
+                                android:layout_marginTop="6dp"
+                                android:drawableStart="@drawable/ic_distance_24dp"
+                                android:drawableLeft="@drawable/ic_distance_24dp"
+                                android:drawablePadding="8dp"
+                                android:gravity="center_vertical"
+                                android:textColor="#040404"
+                                android:textSize="14sp"
+                                app:distance="@{item.distance}" />
+
+                            <com.google.android.material.chip.Chip
+                                android:id="@+id/priority"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@id/distance"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:textColor="#F34454"
+                                android:textSize="12sp"
+                                app:chipBackgroundColor="@color/white"
+                                app:chipStrokeColor="#F34454"
+                                app:chipStrokeWidth="1dp"
+                                app:closeIcon="@drawable/ic_high_priority_24dp"
+                                app:closeIconTint="#F34454"
+                                app:closeIconVisible="true"
+                                app:priority="@{item.priority}"
+                                tools:text="Hight" />
+                        </RelativeLayout>
+
+                        <net.cachapa.expandablelayout.ExpandableLayout
+                            android:id="@+id/expandable"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:el_expanded="false">
+
+                            <include
+                                android:id="@+id/help_details"
+                                layout="@layout/content_help_pager_item"
+                                app:el_expanded="false"
+                                app:item="@{item}" />
+                        </net.cachapa.expandablelayout.ExpandableLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/imageBorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:background="@drawable/bg_circle_white_border"
+                android:padding="4dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    app:srcCompat="@drawable/ic_placeholder_category" />
+            </FrameLayout>
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/imageBorder"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@id/imageBorder"
+                android:layout_toRightOf="@id/imageBorder"
+                android:text="@{item.helpType}"
+                android:textColor="@color/white"
+                app:closeIconTint="@null"
+                app:closeIconVisible="true"
+                app:helpType="@{item.helpType}" />
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
