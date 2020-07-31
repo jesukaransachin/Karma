@@ -54,7 +54,7 @@ To overcome the above challenges and extend a lending hand we have come up with 
 
 ## Demo video
 
-![Watch the video](https://youtu.be/dRQF91RqXNM)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/dRQF91RqXNM/0.jpg)](https://youtu.be/dRQF91RqXNM)
 
 ## The architecture
 
