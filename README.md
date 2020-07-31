@@ -159,7 +159,7 @@ The app is build using the IBM credits available for participating in the CFC, w
 
 ## Live demo
 
-You can find the working apk file for the app [here](docs/karma-v1-release.apk)
+You can find the working apk file for the app [here](https://github.com/jesukaransachin/Karma/blob/master/docs/karma-v1-release.apk?raw=true)
 
 ## Built with
 
