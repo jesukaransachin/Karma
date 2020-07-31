@@ -36,9 +36,7 @@ Some challenges we are facing now
 -	Mass migration 
 
 ### The idea
-
-To overcome the above challenges and extend a lending hand or take actions we have come up with a unique solution to help and connect people during this pandemic and can be used any other similar situations. 
-Solving shortage of essentials resources to the common man:
+To overcome the above challenges and extend a lending hand we have come up with a unique solution to help and connect people during this pandemic.
 -	A platform for users to pin their help needs in just a few clicks.
 -	Users can quickly navigate through the multiple pins on a map near his/her location on the app and extend their help in just one click.
 -	Users wanting to help others with the extra resources at their disposal e.g. food, masks, medicines etc can create pins and publish through the platform.
