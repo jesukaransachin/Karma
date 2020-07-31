@@ -124,6 +124,7 @@ They provide the user with a timeline to view different activities that has take
 the user to quickly reach out to the concerned authorities in stressful time as sometimes it becomes difficult for people to find the correct point of contact.
 -Towards the bottom it contains the flow of App, how the app ‘KARMA’ works. The simple steps to guide the user.
 
+
 ## Business Model
 
 ### Project roadmap: 
