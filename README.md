@@ -18,7 +18,7 @@
 
 ## Short description
 
-Help people to connect people
+Help people. Connect people
 
 ### What's the problem?
 
