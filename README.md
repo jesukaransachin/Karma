@@ -24,19 +24,33 @@ Help people to connect people
 
 ### What's the problem?
 
-This pandemic has affected each and everyone in the world in one form or the another. 
+This pandemic has affected each and everyone in the world in one form or the another.
 Many countries have declared restrictive measures such as lockdown, shelter in place or stay at home orders to contain the pandemic.
-So in such condition helping and supporting each other, understanding others requirements and acting on it is a necessity.
+This has in turn resulted in several challenges as listed below
+
+Some challenges we are facing now 
+•	Shortage or non-availability of essentials.
+•	Reaching out to communities to best distribute limited available resources
+•	Requirement of credible information with fake and incorrect information available all around.
+•	Job losses and deteriorating financial conditions.
+•	Mass migration 
+
 
 
 ### The idea
 
 To overcome the above challenges and extend a lending hand or take actions we have come up with a unique solution to help and connect people during this pandemic and can be used any other similar situations. 
 Solving shortage of essentials resources to the common man:
-- Create Platform for user to Give & Take 
-- Help the help seeker around you. 
-- Share your extra resources that you have  
-- Karma will act as NEXUS between the Help Seekers And The Change Makers! 
+•	A platform for users to pin their help needs in just a few clicks.
+•	Users can quickly navigate through the multiple pins on a map near his/her location on the app and extend their help in just one click.
+•	Users wanting to help others with the extra resources at their disposal e.g. food, masks, medicines etc can create pins and publish through the platform.
+•	Karma will act as NEXUS between the Help Seekers And The Change Makers!
+
+Objective:
+•	Build the habit of Share & Care
+•	Build Empathy, Harmony & Tolerance in society.
+•	It will make access to help and resources if a similar situation must happen in the future.
+•	Capture the good deeds done by users on the platform as Karma points and can be used as a measure of their social behaviour.
 
  
 
@@ -93,7 +107,7 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 ## Authors
 
 * **Sonusingh Chauhan** - App - [sonusinghswd](https://github.com/sonusinghswd)
-* **Jasmine** - App - [jasmineelamblakatt](https://github.com/jasmineelamblakatt)
+* **Jasmine Elamblakatt** - App - [jasmineelamblakatt](https://github.com/jasmineelamblakatt)
 * **Sanket Redekar** - Backend APIs - [wanderingcoderr](https://github.com/wanderingcoderr)
 * **Dylan Dsouza** - App & Backend APIs - [dsouzadyn](https://github.com/dsouzadyn)
 * **Yash Hemmady** - UI/UX
